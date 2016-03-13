@@ -12,6 +12,7 @@ class TutorialViewController: UIViewController {
 
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var next: UIButton!
     
     var tutorialPageViewController: TutorialPageViewController? {
         didSet {
@@ -21,6 +22,8 @@ class TutorialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        next.hidden = true
         
         pageControl.addTarget(self, action: "didChangePageControlValue", forControlEvents: .ValueChanged)
     }

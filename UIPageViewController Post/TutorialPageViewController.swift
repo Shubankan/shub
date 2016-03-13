@@ -16,7 +16,9 @@ class TutorialPageViewController: UIPageViewController {
         // The view controllers will be shown in this order
         return [self.newColoredViewController("Green"),
             self.newColoredViewController("Red"),
-            self.newColoredViewController("Blue")]
+            self.newColoredViewController("Blue"),
+            self.newColoredViewController("Yellow")
+        ]
     }()
     
     override func viewDidLoad() {
